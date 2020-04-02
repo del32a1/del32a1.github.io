@@ -224,7 +224,7 @@ hr {
   justify-content: space-between;
   margin-top: 80px;
 }
-.card_item {
+.card_iner {
   position: relative;
   width: 380px;
   background-color: #95e1d3;
@@ -401,15 +401,17 @@ transform: translateY(-50%) rotate(135deg);
   position: relative;
 }
 .rewiews_item{
-  padding-left: 205px;
+  padding-left: 255px;
   position: relative;
 }
 .rewiews_photo{
   position: absolute;
-  top: 0;
+  top: -25px;
   left: 0;
   z-index: 1;
-  border: 2px solid #95e1d3;
+  border: 0px solid #95e1d3;
+  border-radius: 100%;
+
 }
 .rewiews_text{
   font-size: 24px;
@@ -482,4 +484,120 @@ transform: translateY(-50%) rotate(135deg);
 .social_item:hover{
   color: #fff;
   background-color: #f38181;
+}
+.card_info{
+  margin-top: 20px;
+  text-align: center;
+}
+.card_name{
+  text-transform: uppercase;
+  font-size: 14px;
+  color: black;
+  margin-bottom: 5px;
+}
+.card_prof{
+  font-size: 15px;
+  font-style: italic;
+  color: #999;
+  font-weight: 300
+  ;
+}
+
+.logos{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.works{
+  display: flex;
+}
+.works_col{
+  flex: 1 1 0;
+}
+.works_item{
+  background: linear-gradient(to bottom, #f38181, #fce38a);
+
+  position: relative;
+}
+.works_item:hover .works_image{
+  opacity: 0.1;
+}
+.works_item:hover .works_info{
+  opacity: 1;
+}  
+.works_image{
+  transition: opacity .2s linear;
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.works_info{
+  opacity: 0;
+  padding: 0 15px;
+  text-align: center;
+  color: white;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate3d(0, -50%, 0);
+  z-index: 1;
+  transition: opacity .2s linear;
+}
+.works_title{
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+.works_text{
+  font-size: 15px;
+  font-weight: 300;
+  font-style: italic;
+}
+.section_clients{
+  background: url(../img/clients/clients-bg.jpg) center no-repeat;
+  background-size: cover;
+}
+.clients{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 70px;
+}
+.clients_item{
+  width: 50%;
+  padding: 0 45px 0 175px;
+  position: relative;
+  margin-bottom: 60px;
+}
+.clients_photo{
+  width: 110px;
+height: 110px;
+border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 40px;
+  z-index: 1;
+}
+.clients_name{
+  font-size: 14px;
+  color: #333;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+.clients_prof{
+  font-size: 14px;
+  color: #333;
+}
+
+.clients_text{
+  font-size: 14px;
+  color: #999;
+}
+.clients_text:before{
+  display: block;
+  content: '';
+  background-color: #f38181;
+  width: 60px;
+  height: 3px;
+  margin: 15px 0;
 }
